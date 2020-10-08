@@ -16,6 +16,9 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{5ce9c313-9ea7-443e-8d07-ffb8a1c84441}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MemoryMenus\MemoryRead\MemoryWatcherView">
+      <UniqueIdentifier>{d0bceaea-a477-4d8d-b100-d4a0f2710245}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MemoryMenus.cpp">
@@ -31,6 +34,12 @@
       <Filter>MemoryMenus\MemoryRead\MemoryEditorView</Filter>
     </ClCompile>
     <ClCompile Include="interface.cpp" />
+    <ClCompile Include="MemoryWatcherViewPresenter.cpp">
+      <Filter>MemoryMenus\MemoryRead\MemoryWatcherView</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryWatcherView.cpp">
+      <Filter>MemoryMenus\MemoryRead\MemoryWatcherView</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryMenus.h">
@@ -49,6 +58,12 @@
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="interface.h" />
+    <ClInclude Include="MemoryWatcherViewPresenter.h">
+      <Filter>MemoryMenus\MemoryRead\MemoryWatcherView</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryWatcherView.h">
+      <Filter>MemoryMenus\MemoryRead\MemoryWatcherView</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MemoryMenus.rc">

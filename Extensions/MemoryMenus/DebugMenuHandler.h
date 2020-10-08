@@ -10,7 +10,8 @@ public:
 	// Enumerations
 	enum MenuItem
 	{
-		MENUITEM_MEMORYEDITOR
+		MENUITEM_MEMORYEDITOR,
+		MENUITEM_MEMORYWATCHER
 	};
 
 	// Constructors

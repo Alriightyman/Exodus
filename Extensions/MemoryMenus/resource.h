@@ -2,8 +2,14 @@
 // Microsoft Visual C++ generated include file.
 // Used by MemoryMenus.rc
 //
+#define IDD_MEMEORY_WATCHER             101
 #define IDD_MEMORY_DATA                 117
 #define IDD_MEMORY_DATA_EDIT            134
+#define IDADD                           1003
+#define IDREMOVE                        1004
+#define IDC_EDIT_VARIABLE_NAME          1005
+#define IDC_EDIT2                       1006
+#define IDC_EDIT_RAM_ADDRESS            1006
 #define IDC_MEMORY_DATA_LOCATION        1113
 #define IDC_MEMORY_DATA_SIZE            1114
 #define IDC_MEMORY_DATA_WIDTH           1115
@@ -49,9 +55,9 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        101
+#define _APS_NEXT_RESOURCE_VALUE        102
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1001
+#define _APS_NEXT_CONTROL_VALUE         1006
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

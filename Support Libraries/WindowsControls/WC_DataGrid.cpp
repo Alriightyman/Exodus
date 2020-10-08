@@ -3532,8 +3532,10 @@ LRESULT WC_DataGrid::msgGRID_UPDATECELLTEXT(WPARAM wParam, LPARAM lParam)
 //----------------------------------------------------------------------------------------------------------------------
 LRESULT WC_DataGrid::msgGRID_UPDATECOLUMNTEXT(WPARAM wParam, LPARAM lParam)
 {
+	
 	unsigned int targetColumnID = (unsigned int)wParam;
 	const std::vector<std::wstring>& text = *((const std::vector<std::wstring>*)lParam);
+	auto sptr = text.front().c_str();
 
 	// Retrieve information on the specified column
 	ColumnIDIndexIterator columnIterator = _columnIDIndex.find(targetColumnID);

@@ -1,5 +1,7 @@
 // Microsoft Visual C++ generated resource script.
 //
+#pragma code_page(65001)
+
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
@@ -13,13 +15,10 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-#pragma code_page(1252)
-#endif // _WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -83,6 +82,19 @@ BEGIN
     LISTBOX         IDC_MEMORY_LIST,7,7,206,233,LBS_SORT | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
 END
 
+IDD_MEMEORY_WATCHER DIALOGEX 0, 0, 159, 59
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add",IDADD,18,36,50,14
+    PUSHBUTTON      "Clear All",IDREMOVE,90,36,50,14
+    EDITTEXT        IDC_EDIT_VARIABLE_NAME,6,18,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RAM_ADDRESS,84,18,67,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Variable Name",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,18,6,46,8
+    CONTROL         "RAM Address",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,96,6,44,8
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -90,7 +102,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_MEMORY_DATA_EDIT, DIALOG
     BEGIN
@@ -106,6 +118,14 @@ BEGIN
         RIGHTMARGIN, 213
         TOPMARGIN, 7
         BOTTOMMARGIN, 264
+    END
+
+    IDD_MEMEORY_WATCHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -137,7 +157,7 @@ BEGIN
             VALUE "FileDescription", "Exodus Plugin"
             VALUE "FileVersion", "2.1"
             VALUE "InternalName", "MemoryMenus"
-            VALUE "LegalCopyright", "© 2006-2018 Exodus Open Source Project"
+            VALUE "LegalCopyright", "Â© 2006-2018 Exodus Open Source Project"
             VALUE "OriginalFilename", "MemoryMenus.dll"
             VALUE "ProductName", "MemoryMenus"
             VALUE "ProductVersion", "2.1"
@@ -149,7 +169,7 @@ BEGIN
     END
 END
 
-#endif    // English (U.S.) resources
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -157,10 +177,7 @@ END
 // English (Australia) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
-#pragma code_page(1252)
-#endif // _WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////

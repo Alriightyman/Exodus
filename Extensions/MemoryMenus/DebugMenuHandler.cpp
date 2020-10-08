@@ -1,5 +1,6 @@
 #include "DebugMenuHandler.h"
 #include "MemoryEditorViewPresenter.h"
+#include "MemoryWatcherViewPresenter.h"
 
 //----------------------------------------------------------------------------------------------------------------------
 // Constructors
@@ -14,6 +15,7 @@ DebugMenuHandler::DebugMenuHandler(MemoryMenus& owner, const IDevice& modelInsta
 void DebugMenuHandler::GetMenuItems(std::list<MenuItemDefinition>& menuItems) const
 {
 	menuItems.push_back(MenuItemDefinition(MENUITEM_MEMORYEDITOR, L"MemoryEditor", MemoryEditorViewPresenter::GetUnqualifiedViewTitle(), true, true));
+	menuItems.push_back(MenuItemDefinition(MENUITEM_MEMORYWATCHER, L"MemoryWatcher", MemoryWatcherViewPresenter::GetUnqualifiedViewTitle(), true, true));
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -23,6 +25,8 @@ IViewPresenter* DebugMenuHandler::CreateViewForItem(int menuItemID, const std::w
 	{
 	case MENUITEM_MEMORYEDITOR:
 		return new MemoryEditorViewPresenter(GetMenuHandlerName(), viewName, menuItemID, _owner, _modelInstanceKey, _model);
+	case MENUITEM_MEMORYWATCHER:
+		return new MemoryWatcherViewPresenter(GetMenuHandlerName(), viewName, menuItemID, _owner, _modelInstanceKey, _model);
 	}
 	return 0;
 }

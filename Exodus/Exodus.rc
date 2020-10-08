@@ -1,5 +1,7 @@
 // Microsoft Visual C++ generated resource script.
 //
+#pragma code_page(65001)
+
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
@@ -17,7 +19,6 @@
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-#pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -345,7 +346,7 @@ BEGIN
             VALUE "FileDescription", "Exodus Hardware Emulator"
             VALUE "FileVersion", "2.1"
             VALUE "InternalName", "Exodus"
-            VALUE "LegalCopyright", "© 2006-2018 Exodus Open Source Project"
+            VALUE "LegalCopyright", "Â© 2006-2018 Exodus Open Source Project"
             VALUE "OriginalFilename", "Exodus.exe"
             VALUE "ProductName", "Exodus"
             VALUE "ProductVersion", "2.1"
@@ -417,7 +418,6 @@ END
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
-#pragma code_page(1252)
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
